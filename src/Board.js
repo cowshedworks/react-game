@@ -43,13 +43,12 @@ function Board() {
         setBlocked(true);
 
         if (selectionTileOne.colour === selectionTileTwo.colour) {
-            replaceTilesWith(
-                (existingTile) => {
-                    if (existingTile.id === selectionTileOne.id || existingTile.id === selectionTileTwo.id) {
-                        return { ...existingTile, matched: true };
-                    }
-                    return existingTile;
+            replaceTilesWith((existingTile) => {
+                if (existingTile.colour === selectionTileOne.colour) {
+                    return { ...existingTile, matched: true };
                 }
+                return existingTile;
+            }
             );
         }
 
