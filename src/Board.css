@@ -1,0 +1,30 @@
+.container {
+  display: flex
+}
+
+.info {
+  margin: 30px;
+  text-align: center;
+}
+
+.info > button {
+  background-color: green;
+  padding: 20px;
+  color: white;
+  border-radius: 6px;
+  border:0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.info > p {
+  padding-top: 20px;
+  color: #777777;
+}
+
+.board {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-gap: 30px;
+}
